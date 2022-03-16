@@ -1,0 +1,380 @@
+CRITICAL - 2022-03-08 02:41:09 -->  route cannot be found while reverse-routing.
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/HTTP/RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Login.php(10): redirect('/tes')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Login->__construct()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#8 {main}
+CRITICAL - 2022-03-08 02:52:14 --> syntax error, unexpected token "return"
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/emulat...')
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#8 {main}
+CRITICAL - 2022-03-08 02:55:35 --> Call to undefined function App\Controllers\views()
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Login->index()
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#5 {main}
+CRITICAL - 2022-03-08 02:56:01 --> Invalid file: views/login.php
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/login.php')
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/Common.php(1089): CodeIgniter\View\View->render('views/login', Array, true)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Login.php(17): view('views/login')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Login->index()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#8 {main}
+CRITICAL - 2022-03-08 02:59:20 --> fwrite(): Write of 75 bytes failed with errno=5 I/O error
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', '/storage/emulat...', 995)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(995): fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/Serve.php(97): CodeIgniter\CLI\CLI::write('\e[0;32mCodeIgni...', 'green')
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/Serve.php(114): CodeIgniter\Commands\Server\Serve->run(Array)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/Commands.php(63): CodeIgniter\Commands\Server\Serve->run(Array)
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('serve', Array)
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(830): CodeIgniter\CLI\CommandRunner->_remap('index', 'serve')
+#9 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 /storage/emulated/0/htdocs/rpl/p1ci/spark(63): CodeIgniter\CLI\Console->run()
+#13 {main}
+CRITICAL - 2022-03-08 02:59:20 --> Uncaught ErrorException: fwrite(): Write of 1 bytes failed with errno=5 I/O error in /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php:995
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', '/storage/emulat...', 995)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(995): fwrite(Resource id #2, '\n')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\n')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(441): CodeIgniter\CLI\CLI::write()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/app/Views/errors/cli/error_exception.php(6): CodeIgniter\CLI\CLI::newLine()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(234): include('/storage/emulat...')
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#8 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#9 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-08 03:22:43 --> Invalid file: login.php
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/Common.php(1089): CodeIgniter\View\View->render('login', Array, true)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(17): view('login')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->index()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#8 {main}
+CRITICAL - 2022-03-08 03:23:27 --> Undefined property: App\Controllers\User::$requests
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 22)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->login()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 03:26:29 --> Undefined property: App\Controllers\User::$requests
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 22)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->login()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 03:52:09 --> syntax error, unexpected token "{"
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/Router/Router.php(175): CodeIgniter\Router\Router->autoRoute('user/register')
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(726): CodeIgniter\Router\Router->handle('user/register')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 03:57:08 --> write_file(): Argument #2 ($data) must be of type string, array given, called in /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php on line 38
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(38): write_file('/storage/emulat...', Array, 'a+')
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->add_user()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 04:10:07 --> array_push(): Argument #1 ($array) must be of type array, int given
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(40): array_push(28, Array)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->add_user()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 04:44:12 --> Illegal offset type in unset
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(72): CodeIgniter\Session\Session->remove(Object(CodeIgniter\Session\Session))
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->logout()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 04:45:50 --> Illegal offset type in unset
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(72): CodeIgniter\Session\Session->remove(Object(CodeIgniter\Session\Session))
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->logout()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 05:34:10 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Session\Session given, called in /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php on line 9
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): view('dashboard/index', Object(CodeIgniter\Session\Session))
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 05:35:31 --> view(): Argument #2 ($data) must be of type array, string given, called in /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php on line 9
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): view('dashboard/index', 'putra')
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 05:36:59 --> Undefined variable $data
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Views/dashboard/index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/storage/emulat...', 20)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(210): include('/storage/emulat...')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/Common.php(1089): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(12): view('dashboard/index', Array)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#10 {main}
+CRITICAL - 2022-03-08 06:26:59 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-08 06:27:51 --> Array sizes are inconsistent
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/Helpers/array_helper.php(190): array_multisort(Array, 3, Array)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(33): array_sort_by_multiple_keys(Array, Array)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#7 {main}
+CRITICAL - 2022-03-08 06:30:06 --> Array sizes are inconsistent
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/Helpers/array_helper.php(190): array_multisort(Array, 3, Array)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(33): array_sort_by_multiple_keys(Array, Array)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#7 {main}
+CRITICAL - 2022-03-08 06:33:58 --> Array sizes are inconsistent
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/Helpers/array_helper.php(190): array_multisort(Array, 3, Array)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(33): array_sort_by_multiple_keys(Array, Array)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#7 {main}
+CRITICAL - 2022-03-08 06:34:27 --> Array sizes are inconsistent
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/Helpers/array_helper.php(190): array_multisort(Array, 4, Array)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(28): array_sort_by_multiple_keys(Array, Array)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#7 {main}
+CRITICAL - 2022-03-08 06:39:14 --> Array sizes are inconsistent
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/Helpers/array_helper.php(190): array_multisort(Array, 4, Array)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(28): array_sort_by_multiple_keys(Array, Array)
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#7 {main}
+CRITICAL - 2022-03-08 06:40:12 --> Attempt to modify property "notes" on array
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#5 {main}
+CRITICAL - 2022-03-08 06:40:44 --> Attempt to read property "notes" on array
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/storage/emulat...', 37)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 06:41:35 --> Attempt to read property "notes" on array
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', '/storage/emulat...', 37)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 06:57:38 --> Undefined property: App\Controllers\Dashboard::$session
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 9)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 06:58:10 --> Undefined property: App\Controllers\Dashboard::$session
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 9)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 06:58:53 --> Undefined property: App\Controllers\Dashboard::$session
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 9)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 06:59:17 --> Undefined property: App\Controllers\Dashboard::$session
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 9)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 06:59:38 --> Undefined property: App\Controllers\Dashboard::$session
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 9)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 07:02:02 --> Undefined constant "App\Controllers\session"
+#0 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#5 {main}
+CRITICAL - 2022-03-08 07:08:33 --> Undefined property: App\Controllers\Dashboard::$session
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/storage/emulat...', 9)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(809): App\Controllers\Dashboard->__construct()
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#6 {main}
+CRITICAL - 2022-03-08 07:24:46 --> foreach() argument must be of type array|object, string given
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Views/dashboard/view.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', '/storage/emulat...', 27)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(210): include('/storage/emulat...')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/Common.php(1089): CodeIgniter\View\View->render('dashboard/view', Array, true)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(46): view('dashboard/view', Array)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#10 {main}
+CRITICAL - 2022-03-08 07:28:20 --> Undefined variable $note
+#0 /storage/emulated/0/htdocs/rpl/p1ci/app/Views/dashboard/view.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/storage/emulat...', 41)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(210): include('/storage/emulat...')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/Common.php(1089): CodeIgniter\View\View->render('dashboard/view', Array, true)
+#4 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/Dashboard.php(46): view('dashboard/view', Array)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\Dashboard->view()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#10 {main}
+CRITICAL - 2022-03-08 09:13:24 --> file_get_contents(/storage/emulated/0/htdocs/rpl/p1ci/writable/config.txt): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', '/storage/emulat...', 44)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/app/Controllers/User.php(44): file_get_contents('/storage/emulat...')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(832): App\Controllers\User->action()
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/rewrite.php(43): require_once('/storage/emulat...')
+#7 {main}
+CRITICAL - 2022-03-08 09:26:53 --> fwrite(): Write of 75 bytes failed with errno=5 I/O error
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', '/storage/emulat...', 995)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(995): fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/Serve.php(97): CodeIgniter\CLI\CLI::write('\e[0;32mCodeIgni...', 'green')
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/Serve.php(114): CodeIgniter\Commands\Server\Serve->run(Array)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/Commands.php(63): CodeIgniter\Commands\Server\Serve->run(Array)
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('serve', Array)
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(830): CodeIgniter\CLI\CommandRunner->_remap('index', 'serve')
+#9 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 /storage/emulated/0/htdocs/rpl/p1ci/spark(63): CodeIgniter\CLI\Console->run()
+#13 {main}
+CRITICAL - 2022-03-08 09:26:53 --> Uncaught ErrorException: fwrite(): Write of 1 bytes failed with errno=5 I/O error in /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php:995
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', '/storage/emulat...', 995)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(995): fwrite(Resource id #2, '\n')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\n')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(441): CodeIgniter\CLI\CLI::write()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/app/Views/errors/cli/error_exception.php(6): CodeIgniter\CLI\CLI::newLine()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(234): include('/storage/emulat...')
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#8 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#9 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-03-08 20:59:07 --> fwrite(): Write of 75 bytes failed with errno=5 I/O error
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', '/storage/emulat...', 995)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(995): fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\e[0;32mCodeIgni...')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/Serve.php(97): CodeIgniter\CLI\CLI::write('\e[0;32mCodeIgni...', 'green')
+#4 /storage/emulated/0/htdocs/rpl/p1ci/system/Commands/Server/Serve.php(114): CodeIgniter\Commands\Server\Serve->run(Array)
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/Commands.php(63): CodeIgniter\Commands\Server\Serve->run(Array)
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CommandRunner.php(70): CodeIgniter\CLI\Commands->run('serve', Array)
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CommandRunner.php(56): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(830): CodeIgniter\CLI\CommandRunner->_remap('index', 'serve')
+#9 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 /storage/emulated/0/htdocs/rpl/p1ci/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 /storage/emulated/0/htdocs/rpl/p1ci/spark(63): CodeIgniter\CLI\Console->run()
+#13 {main}
+CRITICAL - 2022-03-08 20:59:07 --> Uncaught ErrorException: fwrite(): Write of 1 bytes failed with errno=5 I/O error in /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php:995
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', '/storage/emulat...', 995)
+#1 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(995): fwrite(Resource id #2, '\n')
+#2 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\n')
+#3 /storage/emulated/0/htdocs/rpl/p1ci/system/CLI/CLI.php(441): CodeIgniter\CLI\CLI::write()
+#4 /storage/emulated/0/htdocs/rpl/p1ci/app/Views/errors/cli/error_exception.php(6): CodeIgniter\CLI\CLI::newLine()
+#5 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(234): include('/storage/emulat...')
+#6 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(237): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#7 /storage/emulated/0/htdocs/rpl/p1ci/system/Debug/Exceptions.php(121): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#8 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#9 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

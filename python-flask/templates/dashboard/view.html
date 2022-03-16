@@ -1,0 +1,43 @@
+{% include "layout/dashboard_header.html" %}
+
+  <form action="" method="get" class="container mx-12" id="filter">
+    <label for="filter">Urutkan berdasarkan</label>
+    <select name="filter">
+      <option value="tanggal">Tanggal</option>
+      <option value="suhu">Suhu Tubuh</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Urutkan</button>
+  </form>
+  
+  <div class="container">
+    <table class="table-catatan" border="1" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Waktu</th>
+          <th>Lokasi</th>
+          <th>Suhu Tubuh</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% if data.notes is iterable and data.notes is not string %}
+        {% for note in data.notes %}
+            <tr>
+              <td>{{ note.tanggal }}</td>
+              <td>{{ note.jam }}</td>
+              <td>{{ note.lokasi }}</td>
+              <td>{{ note.suhu }}</td>
+            </tr>
+        {% endfor %}
+      {% else %}
+          <tr>
+            <td colspan="4">{{ data.notes }}</td>
+          </tr>
+      {% endif %}
+      </tbody>
+    </table>
+  </div>
+  
+  <button type="button" class="btn btn-success float-right mx-12" onclick="location.href='/dashboard/insert'">Isi Catatan Perjalanan</button>
+  
+{% include "layout/footer.html" %}
